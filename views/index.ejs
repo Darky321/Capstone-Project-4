@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lisper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+
+  <body>
+    <h1><%= name %></h1>
+
+    <!--Images for decoration-->
+    <img src="/images/Globe-2-1.png" alt="Globe of earth" class="globeImage" />
+    <img src="/images/file.png" alt="Paper with scribbles" class="paperImage" />
+
+    <div class="card">
+      <!-- <div class=".hover-text"> -->
+      <p>
+        Predicted age for <%= userName %> is: <%= age %>
+        <br />
+        Number of people with this name: <%= count %>
+      </p>
+      <!-- </div> -->
+      <!-- <div class=".initial-text">HOVER</div> -->
+    </div>
+
+    <!-- Receive input of name, moved under the image and added 'user' class -->
+    <form action="/" id="form" class="form user" method="POST">
+      <input type="text" name="name" placeholder="First name" />
+      <button type="submit" class="form-submit">Go</button>
+    </form>
+  </body>
+</html>
